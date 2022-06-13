@@ -1,0 +1,20 @@
+{
+  "name": "ichimonogatari",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app",
+    "dev": "nodemon app"
+  },
+  "keywords": [],
+  "author": "Suki-Chan",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^13.8.0",
+    "dotenv": "^16.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
