@@ -24,7 +24,7 @@ module.exports = {
             embed.setDescription(" "+msg.author.username + "\n 𝐒𝐞 𝐁𝐮𝐫𝐥𝐚 𝐃𝐞 : "+member.user.username + " ")
             embed.setImage("https://www.ichimonogatari.com/IMG/Menhera%20Bots/Interaction%20Commands/Laugh/Laugh"+NumMagic+".gif")
             embed.setFooter({text: " 𝐂𝐫𝐞𝐝𝐢𝐭𝐨𝐬 : " + Creditos})
-            embed.setTimestamp()
+            embed.setTimestamp();
             return message.channel.send( {embeds: [embed] });
         } catch (error) {
             return console.log("Error : " + error);
