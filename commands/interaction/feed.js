@@ -2,7 +2,7 @@
 module.exports = {
     name: "feed",
     aliases: ["eat", "eating", "comiendo"],
-    description:"Interaction Anime Birthday/Cumpleaños",
+    description:"Interaction Anime Feed/Comiendo",
     
     async execute (client, message, args, discord){
         try {
@@ -13,7 +13,7 @@ module.exports = {
             if (!member){
                 let embed = new discord.MessageEmbed()
                 embed.setColor('#D57DC1')
-                embed.setDescription(" "+msg.author.username + " 𝐄𝐬𝐭𝐚 𝐂𝐨𝐦𝐢𝐞𝐧𝐝𝐨 ")
+                embed.setDescription(" "+message.author.username + " 𝐄𝐬𝐭𝐚 𝐂𝐨𝐦𝐢𝐞𝐧𝐝𝐨 ")
                 embed.setImage("https://www.ichimonogatari.com/IMG/Menhera%20Bots/Interaction%20Commands/Feed/Feed"+NumMagic+".gif");
                 embed.setFooter({text: " 𝐂𝐫𝐞𝐝𝐢𝐭𝐨𝐬 : " + Creditos})
                 embed.setTimestamp()        
@@ -21,7 +21,7 @@ module.exports = {
             }
             let embed = new discord.MessageEmbed()
             embed.setColor('#D57DC1')
-            embed.setDescription(" "+msg.author.username + " \n 𝐀𝐥𝐢𝐦𝐞𝐧𝐭𝐨 𝐀 : "+ member.user.username + " ")
+            embed.setDescription(" "+message.author.username + " \n 𝐀𝐥𝐢𝐦𝐞𝐧𝐭𝐨 𝐀 : "+ member.user.username + " ")
             embed.setImage("https://www.ichimonogatari.com/IMG/Menhera%20Bots/Interaction%20Commands/Feed/Feed"+NumMagic+".gif");
             embed.setFooter({text: " 𝐂𝐫𝐞𝐝𝐢𝐭𝐨𝐬 : " + Creditos})
             embed.setTimestamp()

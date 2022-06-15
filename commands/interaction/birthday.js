@@ -13,7 +13,7 @@ module.exports = {
             if (!member){
                 let embed = new discord.MessageEmbed()
                 embed.setColor('#D57DC1')
-                embed.setDescription(" "+message.author.username + " 𝐅𝐞𝐥𝐢𝐳 𝐂𝐮𝐦𝐩𝐥𝐞𝐚ñ𝐨𝐬 >/////<")
+                embed.setDescription(" "+message.author.username + " 𝐅𝐞𝐥𝐢𝐳 𝐂𝐮𝐦𝐩𝐥𝐞𝐚ñ𝐨𝐬 ")
                 embed.setImage("https://www.ichimonogatari.com/IMG/Menhera%20Bots/Interaction%20Commands/Birthday/Birthday"+NumMagic+".gif")
                 embed.setFooter({text: " 𝐂𝐫𝐞𝐝𝐢𝐭𝐨𝐬 : " + Creditos})
                 embed.setTimestamp()        

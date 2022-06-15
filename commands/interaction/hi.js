@@ -1,8 +1,8 @@
 
 module.exports = {
     name: "hi",
-    aliases: ["hola", "hello", "buenas"],
-    description:"Interaction Anime Birthday/Cumpleaños",
+    aliases: ["hola", "hello", "buenas", "saludo", "saludar"],
+    description:"Interaction Anime Hi/Saludar",
     
     async execute (client, message, args, discord){
         try {
@@ -13,7 +13,7 @@ module.exports = {
             if (!member){
                 let embed = new discord.MessageEmbed()
                 embed.setColor('#D57DC1')
-                embed.setDescription(" "+msg.author.username + " 𝐄𝐬𝐭𝐚 𝐒𝐚𝐥𝐮𝐝𝐚𝐧𝐝𝐨 ")
+                embed.setDescription(" "+message.author.username + " 𝐄𝐬𝐭𝐚 𝐒𝐚𝐥𝐮𝐝𝐚𝐧𝐝𝐨 ")
                 embed.setImage("https://www.ichimonogatari.com/IMG/Menhera%20Bots/Interaction%20Commands/Hi/Hi"+NumMagic+".gif")
                 embed.setFooter({text: " 𝐂𝐫𝐞𝐝𝐢𝐭𝐨𝐬 : " + Creditos})
                 embed.setTimestamp()        
@@ -21,7 +21,7 @@ module.exports = {
             }
             let embed = new discord.MessageEmbed()
             embed.setColor('#D57DC1')
-            embed.setDescription(" "+msg.author.username + "\n 𝐄𝐬𝐭𝐚 𝐒𝐚𝐥𝐮𝐝𝐚𝐧𝐝𝐨 :  "+member.user.username + " ")
+            embed.setDescription(" "+message.author.username + "\n 𝐄𝐬𝐭𝐚 𝐒𝐚𝐥𝐮𝐝𝐚𝐧𝐝𝐨 :  "+member.user.username + " ")
             embed.setImage("https://www.ichimonogatari.com/IMG/Menhera%20Bots/Interaction%20Commands/Hi/Hi"+NumMagic+".gif")
             embed.setFooter({text: " 𝐂𝐫𝐞𝐝𝐢𝐭𝐨𝐬 : " + Creditos})
             embed.setTimestamp()
