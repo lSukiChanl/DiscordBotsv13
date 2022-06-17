@@ -1,6 +1,6 @@
 
 module.exports = {
-    name: "kick",
+    name: "kiss",
     aliases: ["beso", "besar"],
     description:"Interaction Anime Kiss/Besar",
     
