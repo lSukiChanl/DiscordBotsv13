@@ -1,18 +1,18 @@
 
 module.exports = {
-    name: "blush",
-    aliases: ["sonrojado", "apenado", "pena", "verguenza"],
-    description:"Reaction Anime Angry/Molesto",
+    name: "boom",
+    aliases: ["kboom", "explosion", "autodestruccion"],
+    description:"Reaction Anime Boom",
     
     async execute (client, message, args, discord){
         try {
             const Creditos = process.env.AUTHOR;
-            let NumMagic = Math.floor(Math.random()*106);
+            let NumMagic = Math.floor(Math.random()*28);
             NumMagic = NumMagic + 1;            
             let embed = new discord.MessageEmbed()
                 embed.setColor('#D57DC1')
-                embed.setDescription(" "+message.author.username + " 𝐄𝐬𝐭𝐚 𝐒𝐨𝐧𝐫𝐨𝐣𝐚𝐝@ (⁄ ⁄•⁄ω⁄•⁄ ⁄) " )
-                embed.setImage("https://www.ichimonogatari.com/IMG/Menhera%20Bots/Reaction%20Commands/Blush/Blush"+NumMagic+".gif");
+                embed.setDescription(" "+msg.author.username + " ¡¡𝐁𝐎𝐎𝐎𝐎𝐌!!! ((╬◣﹏◢)) " )
+                embed.setImage("https://www.ichimonogatari.com/IMG/Menhera%20Bots/Reaction%20Commands/Boom/Boom"+NumMagic+".gif");
                 embed.setFooter({text: " 𝐂𝐫𝐞𝐝𝐢𝐭𝐨𝐬 : " + Creditos})
                 embed.setTimestamp()
             return message.channel.send( {embeds: [embed] });
