@@ -7,7 +7,7 @@ module.exports = {
     async execute (client, message, args, discord){
         try {
             const Creditos = process.env.AUTHOR;
-            let NumMagic = Math.floor(Math.random()*79);
+            let NumMagic = Math.floor(Math.random()*17);
             NumMagic = NumMagic + 1;            
             let embed = new discord.MessageEmbed()
                 embed.setColor('#D57DC1')
