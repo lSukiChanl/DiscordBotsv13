@@ -11,7 +11,7 @@ module.exports = {
             NumMagic = NumMagic + 1;            
             let embed = new discord.MessageEmbed()
                 embed.setColor('#D57DC1')
-                embed.setDescription(" "+msg.author.username + " 𝐀𝐩𝐫𝐮𝐞𝐛𝐚 𝐄𝐬𝐭𝐨 ( ´ ▽ ` ).｡ｏ♡ " )
+                embed.setDescription(" "+message.author.username + " 𝐀𝐩𝐫𝐮𝐞𝐛𝐚 𝐄𝐬𝐭𝐨 ( ´ ▽ ` ).｡ｏ♡ " )
                 embed.setImage("https://www.ichimonogatari.com/IMG/Menhera%20Bots/Reaction%20Commands/Like/Like"+NumMagic+".gif");
                 embed.setFooter({text: " 𝐂𝐫𝐞𝐝𝐢𝐭𝐨𝐬 : " + Creditos})
                 embed.setTimestamp()

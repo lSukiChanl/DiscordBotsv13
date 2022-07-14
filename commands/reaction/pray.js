@@ -11,7 +11,7 @@ module.exports = {
             NumMagic = NumMagic + 1;            
             let embed = new discord.MessageEmbed()
                 embed.setColor('#D57DC1')
-                embed.setDescription(" "+msg.author.username + " 𝐋𝐞 𝐄𝐬𝐭𝐚 𝐑𝐞𝐳𝐚𝐧𝐝𝐨 𝐚 𝐃𝐢𝐨𝐬𝐢𝐭𝐨 (𝐀𝐦𝐞𝐧) " )
+                embed.setDescription(" "+message.author.username + " 𝐋𝐞 𝐄𝐬𝐭𝐚 𝐑𝐞𝐳𝐚𝐧𝐝𝐨 𝐚 𝐃𝐢𝐨𝐬𝐢𝐭𝐨 (𝐀𝐦𝐞𝐧) " )
                 embed.setImage("https://www.ichimonogatari.com/IMG/Menhera%20Bots/Reaction%20Commands/Pray/Pray"+NumMagic+".gif");
                 embed.setFooter({text: " 𝐂𝐫𝐞𝐝𝐢𝐭𝐨𝐬 : " + Creditos})
                 embed.setTimestamp()
