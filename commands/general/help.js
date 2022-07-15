@@ -78,9 +78,8 @@ module.exports = {
                         " \n 𝐒𝐞𝐭𝐏𝐫𝐞𝐟𝐢𝐱 = 𝐂𝐚𝐦𝐛𝐢𝐚𝐫 𝐞𝐥 𝐩𝐫𝐞𝐟𝐢𝐣𝐨 𝐝𝐞𝐧𝐭𝐫𝐨 𝐝𝐞𝐥 𝐒𝐞𝐫𝐯𝐢𝐝𝐨𝐫 ");
                     embed.setURL("https://www.ichimonogatari.com");
                     embed.setImage("https://www.ichimonogatari.com/IMG/Menhera%20Bots/Main%20Commands/Help/Help.gif");
-                    embed.setFooter(" 𝗖𝗿𝗲𝗱𝗶𝘁𝗼𝘀 : "+ Creditos +"  "+ Version +" ");
+                    embed.setFooter({text: " 𝐂𝐫𝐞𝐝𝐢𝐭𝐨𝐬 : "+ Creditos +"  "+ Version +" "})
                     embed.setTimestamp()
-                message.reply(" 𝐓𝐞 𝐄𝐧𝐯𝐢𝐞 𝐮𝐧 𝐌𝐞𝐧𝐬𝐚𝐣𝐞 𝐚𝐥 𝐏𝐫𝐢𝐯𝐚𝐝 :heartpulse: ");
                 return message.channel.send( {embeds: [embed] });
                 }else{
                 message.delete().catch(error =>
@@ -149,9 +148,8 @@ module.exports = {
                         " \n 𝐒𝐞𝐭𝐏𝐫𝐞𝐟𝐢𝐱 = 𝐂𝐚𝐦𝐛𝐢𝐚𝐫 𝐞𝐥 𝐩𝐫𝐞𝐟𝐢𝐣𝐨 𝐝𝐞𝐧𝐭𝐫𝐨 𝐝𝐞𝐥 𝐒𝐞𝐫𝐯𝐢𝐝𝐨𝐫 ");
                     embed.setURL("https://www.ichimonogatari.com")
                     embed.setImage("https://www.ichimonogatari.com/IMG/Menhera%20Bots/Main%20Commands/Help/Help.gif")
-                    embed.setFooter(" 𝗖𝗿𝗲𝗱𝗶𝘁𝗼𝘀 : "+ Creditos +"  "+ Version +" ");
+                    embed.setFooter({text: " 𝐂𝐫𝐞𝐝𝐢𝐭𝐨𝐬 : "+ Creditos +"  "+ Version +" "})
                     embed.setTimestamp()
-                message.reply(" 𝐓𝐞 𝐄𝐧𝐯𝐢𝐞 𝐮𝐧 𝐌𝐞𝐧𝐬𝐚𝐣𝐞 𝐚𝐥 𝐏𝐫𝐢𝐯𝐚𝐝𝐨 :heartpulse: ");
                 return message.channel.send( {embeds: [embed] });
                 }
             
