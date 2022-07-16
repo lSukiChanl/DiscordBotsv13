@@ -6,7 +6,7 @@ module.exports = {
 
         if(!message.member.permissions.has('MANAGE_MESSAGES')) return message.reply("Permisos Insuficientes")
         
-        if (args[0] = 'OFF') {
+        if (args[0] == 'OFF') {
             message.channel.setRateLimitPerUser(0, "Mucho Spam");
             return message.reply("SlowMode OFF");
         }

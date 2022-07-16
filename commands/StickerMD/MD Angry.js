@@ -1,6 +1,6 @@
 module.exports = {
     name: "mdangry",
-    aliases: ["md angry"],
+    aliases: ["mdenojada"],
     description:"Sticker Menhera Perrita Enojada",
     async execute (client, message, args, discord){
         try {

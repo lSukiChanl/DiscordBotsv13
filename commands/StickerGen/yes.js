@@ -1,7 +1,7 @@
 module.exports = {
-    name: "mdnervous",
-    aliases: ["mdnerviosa"],
-    description:"Sticker Menhera Perrita Nerviosa",
+    name: "sryes",
+    aliases: ["sgyes"],
+    description:"Sticker Me Gusta",
     async execute (client, message, args, discord){
         try {
             message.delete().catch(error =>
@@ -13,8 +13,8 @@ module.exports = {
             );
             let embed = new discord.MessageEmbed()
             embed.setColor('#D57DC1')
-            embed.setDescription(" "+ message.author.username +" 𝐒𝐞 𝐏𝐮𝐬𝐨 𝐍𝐞𝐫𝐯𝐢𝐨𝐬@")
-            embed.setImage('https://cdn.discordapp.com/emojis/631035838561779713.png')
+            embed.setDescription("𝐀 "+ message.author.username +" 𝐋𝐞 𝐆𝐮𝐬𝐭𝐚")
+            embed.setImage('https://cdn.discordapp.com/emojis/631041417610788874.png')
             return message.channel.send( {embeds: [embed] });
         } catch (error) {
             return console.log("Error : " + error);
