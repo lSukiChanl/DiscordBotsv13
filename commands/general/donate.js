@@ -7,10 +7,13 @@ module.exports = {
         try {
             const Creditos = process.env.AUTHOR;
             const Version = process.env.VERSION;
+
+            const Author = process.env.NOMBREAUTOR;
+            const Icon = process.env.ICONURL;
+            const Url = process.env.URL;
             let embed = new discord.MessageEmbed()
-                embed.setColor('#D57DC1')
-                embed.setAuthor("💜 𝐆𝐫𝐚𝐜𝐢𝐚𝐬 💜 \n "+message.author.username+" " + 
-                                "\n 𝐕𝐢𝐬𝐢𝐭𝐚 𝐞𝐥 𝐆𝐫𝐮𝐩𝐨 𝐎𝐟𝐢𝐜𝐢𝐚𝐥 : https://discord.gg/BRq5QGw", message.author.avatarURL)
+                embed.setColor('#D57DC1')                
+                embed.setAuthor({ name: Author, iconURL: Icon, url: Url})
                 embed.setTitle("🎀 🎀 🎀 🎀 🎀 𝗗𝗢𝗡𝗔𝗥 🎀 🎀 🎀 🎀 🎀")
                 embed.setThumbnail("https://www.ichimonogatari.com/IMG/Avatar/MenheraAngel001.png")
                 embed.addField(" 𝐀𝐛𝐚𝐣𝐨 𝐔𝐑𝐋 (𝐒𝐢 𝐧𝐨 𝐅𝐮𝐧𝐜𝐢𝐨𝐧𝐚 𝐞𝐥 𝐋𝐢𝐧𝐤)  💖 ", ""+

@@ -8,6 +8,10 @@ module.exports = {
             const Creditos = process.env.AUTHOR;
             const Version = process.env.VERSION;
 
+            const Author = process.env.NOMBREAUTOR;
+            const Icon = process.env.ICONURL;
+            const Url = process.env.URL;
+
             if (message.channel.nsfw === true) {
                 message.delete().catch(error =>
                     message.reply(({embed: {
@@ -18,8 +22,7 @@ module.exports = {
                 );    
                 let embed = new discord.MessageEmbed()
                     embed.setColor('#D57DC1')
-                    embed.setAuthor("✨ ¿𝐍𝐞𝐜𝐞𝐬𝐢𝐭𝐚𝐬 𝐀𝐲𝐮𝐝𝐚? "+message.author.username+" ✨" + 
-                        "\n 𝐕𝐢𝐬𝐢𝐭𝐚 𝐞𝐥 𝐆𝐫𝐮𝐩𝐨 𝐎𝐟𝐢𝐜𝐢𝐚𝐥 : https://discord.gg/BRq5QGw", message.author.avatarURL)
+                    embed.setAuthor({ name: Author, iconURL: Icon, url: Url})
                     embed.setDescription(' 🖤 💜 ❤ 𝐂𝐨𝐦𝐚𝐧𝐝𝐨𝐬 𝐝𝐞 𝐌𝐞𝐧𝐡𝐞𝐫𝐚-𝐁𝐨𝐭 ❤ 💜 🖤 ')
                     embed.setTitle("🎀 🎀 🎀 🎀 𝐏𝐚𝐠𝐢𝐧𝐚 𝐎𝐟𝐢𝐜𝐢𝐚𝐥 🎀 🎀 🎀 🎀")
                     embed.setThumbnail("https://www.ichimonogatari.com/IMG/Menhera%20Bots/Main%20Commands/Help/MenheraAngel001.png")
@@ -91,8 +94,7 @@ module.exports = {
                 );
                 let embed = new discord.MessageEmbed()
                     embed.setColor('#D57DC1')
-                    embed.setAuthor("✨ ¿𝐍𝐞𝐜𝐞𝐬𝐢𝐭𝐚𝐬 𝐀𝐲𝐮𝐝𝐚? "+message.author.username+" ✨" + 
-                        "\n 𝐕𝐢𝐬𝐢𝐭𝐚 𝐞𝐥 𝐆𝐫𝐮𝐩𝐨 𝐎𝐟𝐢𝐜𝐢𝐚𝐥 : https://discord.gg/BRq5QGw", message.author.avatarURL)
+                    embed.setAuthor({ name: Author, iconURL: Icon, url: Url})
                     embed.setDescription(' 🖤 💜 ❤ 𝐂𝐨𝐦𝐚𝐧𝐝𝐨𝐬 𝐝𝐞 𝐌𝐞𝐧𝐡𝐞𝐫𝐚-𝐁𝐨𝐭 ❤ 💜 🖤 ')
                     embed.setTitle("🎀 🎀 🎀 🎀 𝐏𝐚𝐠𝐢𝐧𝐚 𝐎𝐟𝐢𝐜𝐢𝐚𝐥 🎀 🎀 🎀 🎀")
                     embed.setThumbnail("https://www.ichimonogatari.com/IMG/Menhera%20Bots/Main%20Commands/Help/MenheraAngel001.png")

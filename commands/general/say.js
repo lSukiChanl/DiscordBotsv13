@@ -1,10 +1,12 @@
 module.exports = {
-    name: "menhera",
-    aliases: ["menhera-chan","kurumi","kurumi-chan"],
-    description:"Ver un Meme Random",
+    name: "say",
+    aliases: ["decir","di"],
+    description:"Escribir con Menhera-Chan",
     async execute (client, message, args, discord){
+
         try {
-            message.channel.send(args + "");
+            let Texto = args.join(" ");
+            message.channel.send(Texto);
             message.delete()
             .catch(error =>
                 message.reply(({embed: {

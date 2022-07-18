@@ -26,10 +26,15 @@ module.exports = {
             const Creditos = process.env.AUTHOR;
             const Version = process.env.VERSION;
             
+            const Author = process.env.NOMBREAUTOR;
+            const Icon = process.env.ICONURL;
+            const Url = process.env.URL;
+            
                 let embed = new discord.MessageEmbed()
                     embed.setTitle("🎀 🎀 🎀 🎀 Informacion del Perfil 🎀 🎀 🎀 🎀")
                     embed.setThumbnail(message.member.user.displayAvatarURL({ dynamic: true, size: 1024 }))
                     embed.setColor('#D57DC1')
+                    embed.setAuthor({ name: Author, iconURL: Icon, url: Url})
                     embed.addField('Informacion de Usuario',
                         "\n " + `**♡ Username:** ${message.member.user.username}` +
                         "\n " + `**♡ Codigo:** ${message.member.user.discriminator}`+
@@ -44,7 +49,7 @@ module.exports = {
                     embed.addField('Miembro',
                         "\n " + `**♡ Highest Role:** ${message.member.roles.highest.id === message.guild.id ? 'None' : message.member.roles.highest.name}` + 
                         "\n " + `**♡ Server Join Date:** ${moment(message.member.joinedAt).format('LL LTS')}` + 
-                        "\n " + `**♡ Roles [${message.guild.roles.cache.has.length}]:** ${message.guild.roles.cache.has.length < 10 ? message.guild.roles.cache.values().join(', ') : message.guild.roles.cache.has.length > 10 ? this.client.utils.trimArray(roles) : 'None'}` +
+                        //"\n " + `**♡ Roles [${message.guild.roles.cache.has.length}]:** ${message.guild.roles.cache.has.length < 10 ? message.guild.roles.cache.values().join(', ') : message.guild.roles.cache.has.length > 10 ? this.client.utils.trimArray(roles) : 'None'}` +
                         "\n " + `\u200b`
                     );
                     embed.setURL("https://www.ichimonogatari.com")
