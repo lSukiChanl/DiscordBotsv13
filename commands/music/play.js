@@ -14,6 +14,8 @@ module.exports = {
             const replacer = new RegExp(",", 'g');
             const string = args + "";
             args = string.replace(replacer, " ");
+
+            message.channel.send('probandoo' + args);
             
             const vc = message.member.voice.channel;
             if (!vc) {
