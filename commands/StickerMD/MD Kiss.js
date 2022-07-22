@@ -3,6 +3,12 @@ module.exports = {
     aliases: ["mdbeso"],
     description:"Sticker Menhera Perrita Besando",
     async execute (client, message, args, discord){
+        const Creditos = process.env.AUTHOR;
+        const Version = process.env.VERSION;
+        const Author = process.env.NOMBREAUTOR;
+        const Icon = process.env.ICONURL;
+        const Url = process.env.URL;
+        
         try {
             message.delete().catch(error =>
                 message.reply(({embed: {
@@ -13,8 +19,11 @@ module.exports = {
             );
             let embed = new discord.MessageEmbed()
             embed.setColor('#D57DC1')
+            embed.setAuthor({ name: Author, iconURL: Icon, url: Url})
             embed.setDescription(" "+ message.author.username +" 𝐓𝐞 𝐪𝐮𝐢𝐞𝐫𝐞 𝐛𝐞𝐬𝐚𝐫")
             embed.setImage('https://cdn.discordapp.com/emojis/631035786204151809.png')
+            embed.setFooter({text: " 𝐂𝐫𝐞𝐝𝐢𝐭𝐨𝐬 : "+ Creditos +"  "+ Version +" "})
+            embed.setTimestamp()
             return message.channel.send( {embeds: [embed] });
         } catch (error) {
             return console.log("Error : " + error);
